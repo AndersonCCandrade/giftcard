@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+.cartao {
+    width: 620px;
+    /* Mudei a largura para px para facilitar na hora de deixar responsivo */
+    height: 500px;
+    /* Adicionei uma altura */
+  }
+
+  
+
+#andersoncarlos { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a383f;
+    border-radius: 15px;
+    overflow: hidden;            
+}
+
+
+#andersoncarlos::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200%;
+    background: linear-gradient(180deg, #818d5f, #fae9bb);
+    animation: animacao 4s linear infinite;
+}
+
+@keyframes animacao {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.andersoncarlos__background {
+    background-image: url("./assets/assets_anderson/background.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.98);
+    z-index: 999;    
+}
+
+
+.andersoncarlos__fundo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(110deg, rgba(15,33,45,1) 0%, rgba(15,33,45,1) 35%, rgba(15,33,45,0) 100%);
+    width: 620px;
+    height: 500px;
+    border-radius: 15px; 
+     
+}
+
+.andersoncarlos__apresentacao {
+    display: flex;
+    justify-content:space-around;
+    width: 620px;   
+}
+
+.andersoncarlos__apresentacao__foto {
+    margin: 5% 0% 0% 6%;   
+}
+
+.andersoncarlos__apresentacao__titulo {
+    margin: 17% 2% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Goldman', cursive;
+    font-weight: 400;
+    font-size: 1.75rem;
+    color: #BBE1FA;
+    
+}
+.andersoncarlos__apresentacao__titulo__linha {
+    width: 350px;
+    border: 1px #186DA7 solid;
+    margin: 16px;    
+}
+
+.andersoncarlos__conteudo {
+    margin: 1% 0% 0% 0%;
+    width: 568px;
+    height: 274px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #1b262c75;
+}
+
+.andersoncarlos__conteudo__texto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 3% 0% 0%;
+    width: 312px;
+    height: 247px;
+    font-family: 'Goldman', cursive;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #BBE1FA;    
+}
+
+.andersoncarlos__conteudo__linha {
+    height: 216px;
+    border: 1px #186DA7 solid;
+    margin: 5% 0% 0% 0%;   
+}
+
+.andersoncarlos__conteudo__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 146px;
+    height: 156px;
+    margin: 7% 0% 0% 4%;    
+}
+
+.andersoncarlos__conteudo__links__img {
+    display: flex;
+    margin: 0% 10% 0% 0%;
+    align-items: flex-end;
+    gap: 15px;
+    font-family: 'Goldman', cursive;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #BBE1FA;
+    text-decoration: none;    
+    width: 100%;
+}
+
+.andersoncarlos__conteudo__links__img:hover {
+    transform: scale(1.09);
+    background: #186ea786;
+}
